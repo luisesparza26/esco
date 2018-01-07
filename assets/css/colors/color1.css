@@ -1,0 +1,107 @@
+.brand-text {
+    color: #2c4e6a !important;
+}
+
+.brand-text i {
+    color: #2c4e6a !important;
+}
+
+.brand-bg,
+.sweet-alert button {
+    background-color: #2c4e6a !important;
+}
+
+.waves-effect.waves-brand  {
+    background-color: rgba(0, 188, 212, 0.66);
+}
+
+.p-overlay {
+    background-color: rgba(44, 78, 106, 0.9);
+}
+
+
+.circle-loader .path {
+    stroke: #2c4e6a;
+}
+
+
+.side-nav  li.current a,
+.side-nav  li a:hover {
+    border-bottom-color: #2c4e6a;
+}
+
+.static-menu li i:hover,
+.static-menu li a:hover,
+.submenu-ul li a:hover,
+.home-title span,
+.about-subtitle,
+.person-about > a.btn-large,
+.about-social ul li a i,
+.skill-title,
+.skill-count,
+.single-widget ul li a,
+.single-post-content a,
+.share-post li a:hover,
+.com-title a,
+span.num {
+    color: #2c4e6a;
+}
+
+.singel-hr-inner,
+.hr-wrap,
+.hrc:after,
+.thumb-slides-container.owl-theme .owl-controls .owl-page.active span,
+.blog-inner .card-content a.right:hover,
+.blog-inner .card-content a.right:focus,
+.contact-form .submit-btn:hover,
+.contact-form .submit-btn:focus,
+a.tags,
+.blog-inner .card-content a.right:active {
+    background-color: #2c4e6a;
+}
+
+.contact-form .materialize-textarea:focus,
+.contact-form .input-box:focus {
+    border-color: #2c4e6a;
+    box-shadow: 0px 1px 0px #2c4e6a;
+}
+
+
+.single-post-content blockquote {
+    border-left: 5px solid #2c4e6a;
+}
+
+
+
+@-webkit-keyframes color {
+    0%   {stroke: #2c4e6a;}
+    20%  {stroke: #2c4e6a;}
+    25%  {stroke: #2c4e6a;}
+    45%  {stroke: #2c4e6a;}
+    50%  {stroke: #2c4e6a;}
+    70%  {stroke: #2c4e6a;}
+    75%  {stroke: #2c4e6a;}
+    95%  {stroke: #2c4e6a;}
+}
+
+@keyframes color {
+    0%   {stroke: #2c4e6a;}
+    20%  {stroke: #2c4e6a;}
+    25%  {stroke: #2c4e6a;}
+    45%  {stroke: #2c4e6a;}
+    50%  {stroke: #2c4e6a;}
+    70%  {stroke: #2c4e6a;}
+    75%  {stroke: #2c4e6a;}
+    95%  {stroke: #2c4e6a;}
+}
+
+
+/* Add your CSS below */
+
+
+
+
+.menu-select [type="radio"]:checked + label:after {
+    border-color: #2c4e6a;
+    background-color: #2c4e6a;
+}
