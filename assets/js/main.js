@@ -674,7 +674,6 @@ $(window).load(function(){
 
 		    },
 		    error: function(){
-		    	function(){
 		    		var $this = $(this),
 				data = $(this).serialize(),
 				name = $this.find('#contact_name'),
@@ -683,7 +682,6 @@ $(window).load(function(){
 				loader = $this.find('.form-loader-area'),
 				submitBtn = $this.find('button, input[type="submit"]');
 				sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
-				}
 		    }
 		    dataType: "json"
 		});
