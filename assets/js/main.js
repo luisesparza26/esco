@@ -657,11 +657,11 @@ $(window).load(function(){
 		    url: $form.attr("action"), 
 		    method: "POST",
 		    data: $form.formObject(),
-		    success: function(){
-		    	loader = $this.find('.form-loader-area');
-		    	submitBtn = $this.find('button, input[type="submit"]');
-		    	loader.show();
-		    	submitBtn.attr('disabled', 'disabled');
+		    success: function($response){
+		    	var loader = $this.find('.form-loader-area');
+		    	var submitBtn = $this.find('button, input[type="submit"]');
+		    	var loader.show();
+		    	var submitBtn.attr('disabled', 'disabled');
 
 		    	swal("Thanks!", "Your message has been sent successfully!", "success");
 		    	$('#contactForm').trigger("reset");
