@@ -668,11 +668,21 @@ $(window).load(function(){
 
 				loader.show();
 				submitBtn.attr('disabled', 'disabled');
-				
-		    	swal("Thanks!", "Your message has been sent successfully!", "success");
+
+		    	swal("Gracias!", "Tu mensaje ha sido enviado existosamente!", "success");
 		    	$('#contactForm').trigger("reset");
 
 		    },
+		    error: function(){
+		    	function(){
+				sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
+				var hand = setTimeout(function(){
+					loader.hide();
+					submitBtn.removeAttr('disabled');
+					clearTimeout(hand);
+				}, 1000);
+			}
+		    }
 		    dataType: "json"
 		});
 	}
