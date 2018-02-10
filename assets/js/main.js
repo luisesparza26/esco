@@ -664,10 +664,10 @@ $(window).load(function(){
 				email = $this.find('#email'),
 				message = $this.find('#textarea1'),
 				loader = $this.find('.form-loader-area'),
-				submitBtn = $this.find('button, input[type="submit"]');*/
+				submitBtn = $this.find('button, input[type="submit"]');
 
 				loader.show();
-				submitBtn.attr('disabled', 'disabled');
+				submitBtn.attr('disabled', 'disabled');*/
 
 		    	swal("Gracias!", "Tu mensaje ha sido enviado existosamente!", "success");
 		    	$('#contactForm').trigger("reset");
