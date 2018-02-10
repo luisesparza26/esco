@@ -658,7 +658,9 @@ $(window).load(function(){
 		    method: "POST",
 		    data: $form.formObject(),
 		    success: function(){
-		    	$("#contact-message").html( "Se ha enviado el mensaje con éxito");
+		    	swal("Thanks!", "Your message has been sent successfully!", "success");
+					$this.find("input, textarea").val("");
+				}
 		    	$('#contactForm').trigger("reset");
 
 		    },
