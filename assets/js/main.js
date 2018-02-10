@@ -646,8 +646,16 @@ $(window).load(function(){
 			}
 
 		});
+		$('#contactForm').bind('change keyup', function() {
+
+		    if(!$(this).validate().checkForm()) {
+
+		        $('#enviar').attr('disabled', true);
+
+		    }});
 
 		$("#contactForm").on("submit",function(ev){
+
 			ev.preventDefault();
 			sendForm($(this));
 			return false;
@@ -659,7 +667,7 @@ $(window).load(function(){
 			    data: $form.formObject(),
 			    success: function(){
 			    		alert('HOLA MUNDO');
-			    	}
+			    	},
 			    error: function(){
 					sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
 			    },

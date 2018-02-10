@@ -825,7 +825,7 @@ desarrollo de software y sistemas tecnológicos.</h2>
 													<label for="textarea1" class="input-label">Mensaje</label>
 												</div>
 												<div class="input-field submit-wrap clearfix">
-													<button type="submit" id="enviar" class="left waves-effect btn-flat brand-text submit-btn">Enviar Mensaje</button>
+													<button type="submit" id="enviar" disabled="false" class="left waves-effect btn-flat brand-text submit-btn">Enviar Mensaje</button>
 													<div class="right form-loader-area">
 														<svg class="circular size-20" height="20" width="20">
 															<circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
@@ -898,21 +898,6 @@ desarrollo de software y sistemas tecnológicos.</h2>
 	<script src="assets/libs/sweetalert/sweet-alert.min.js"></script>
 	<script src="assets/js/common.js"></script>7<script src="assets/js/form_object.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script type="text/javascript">
-
-		$('#contactForm').bind('change keyup', function() {
-
-		    if($(this).validate().checkForm()) {
-
-		        $('#enviar').attr('disabled', false);
-
-		    } else {
-
-		        $('#enviar').attr('disabled', true);
-
-		    } });
-
-</script>
 </body>
 
 </html>
