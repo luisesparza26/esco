@@ -658,9 +658,12 @@ $(window).load(function(){
 		    method: "POST",
 		    data: $form.formObject(),
 		    success: function(){
+		    	loader = $this.find('.form-loader-area');
+		    	submitBtn = $this.find('button, input[type="submit"]');
+		    	loader.show();
+		    	submitBtn.attr('disabled', 'disabled');
+
 		    	swal("Thanks!", "Your message has been sent successfully!", "success");
-					$this.find("input, textarea").val("");
-				}
 		    	$('#contactForm').trigger("reset");
 
 		    },
