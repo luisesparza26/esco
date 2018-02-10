@@ -646,13 +646,6 @@ $(window).load(function(){
 			}
 
 		});
-		$('#contactForm').bind('change keyup', function() {
-
-		    if(!) {
-
-		        $('#enviar').attr('disabled', true);
-
-		    }});
 
 		$("#contactForm").on("submit",function(ev){
 
