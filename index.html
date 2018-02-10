@@ -902,15 +902,11 @@ desarrollo de software y sistemas tecnológicos.</h2>
 
 		$('#contactForm').bind('change keyup', function() {
 
-		    if($(this).validate().checkForm()) {
-
-		        $('#enviar').attr('disabled', false);
-
-		    } else {
+		    if(!$(this).validate().checkForm()) {
 
 		        $('#enviar').attr('disabled', true);
 
-		    } });
+		    }});
 
 </script>
 </body>
