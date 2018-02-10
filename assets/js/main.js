@@ -648,7 +648,7 @@ $(window).load(function(){
 		});
 		$('#contactForm').bind('change keyup', function() {
 
-		    if(!$(this).validate().checkForm()) {
+		    if(!) {
 
 		        $('#enviar').attr('disabled', true);
 
@@ -657,8 +657,11 @@ $(window).load(function(){
 		$("#contactForm").on("submit",function(ev){
 
 			ev.preventDefault();
-			sendForm($(this));
-			return false;
+			if(!$(this).validate().checkForm()){
+				sendForm($(this));
+				return false;	
+			}
+			
 		});
 		function sendForm($form){
 			$.ajax({
