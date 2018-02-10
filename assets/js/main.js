@@ -658,13 +658,13 @@ $(window).load(function(){
 		    method: "POST",
 		    data: $form.formObject(),
 		    success: function(){
-		    	var $this = $(this),
+		    	/*var $this = $(this),
 				data = $(this).serialize(),
 				name = $this.find('#contact_name'),
 				email = $this.find('#email'),
 				message = $this.find('#textarea1'),
 				loader = $this.find('.form-loader-area'),
-				submitBtn = $this.find('button, input[type="submit"]');
+				submitBtn = $this.find('button, input[type="submit"]');*/
 
 				loader.show();
 				submitBtn.attr('disabled', 'disabled');
@@ -674,13 +674,6 @@ $(window).load(function(){
 
 		    },
 		    error: function(){
-		    		var $this = $(this),
-				data = $(this).serialize(),
-				name = $this.find('#contact_name'),
-				email = $this.find('#email'),
-				message = $this.find('#textarea1'),
-				loader = $this.find('.form-loader-area'),
-				submitBtn = $this.find('button, input[type="submit"]');
 				sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
 		    },
 		    dataType: "json"
