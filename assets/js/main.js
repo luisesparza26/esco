@@ -648,37 +648,23 @@ $(window).load(function(){
 		});
 
 		$("#contactForm").on("submit",function(ev){
-		ev.preventDefault();
-		sendForm($(this));
-		return false;
-	});
-	function sendForm($form){
-		$.ajax({
-		    url: $form.attr("action"), 
-		    method: "POST",
-		    data: $form.formObject(),
-		    success: function(){
-		    	/*var $this = $(this),
-				data = $(this).serialize(),
-				name = $this.find('#contact_name'),
-				email = $this.find('#email'),
-				message = $this.find('#textarea1'),
-				loader = $this.find('.form-loader-area'),
-				submitBtn = $this.find('button, input[type="submit"]');
-
-				loader.show();
-				submitBtn.attr('disabled', 'disabled');*/
-
-		    	swal("Gracias!", "Tu mensaje ha sido enviado existosamente!", "success");
-		    	$('#contactForm').trigger("reset");
-
-		    },
-		    error: function(){
-				sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
-		    },
-		    dataType: "json"
+			ev.preventDefault();
+			sendForm($(this));
+			return false;
 		});
-	}
+		function sendForm($form){
+			$.ajax({
+			    url: $form.attr("action"), 
+			    method: "POST",
+			    data: $form.formObject(),
+			    success: function(){
+			    	
+			    error: function(){
+					sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
+			    },
+			    dataType: "json"
+			});
+		}
 
 		var portfolioModal = $('#portfolioModal'),
 			portImgArea = portfolioModal.find('.model-img'),
