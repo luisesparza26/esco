@@ -657,7 +657,7 @@ $(window).load(function(){
 		    url: $form.attr("action"), 
 		    method: "POST",
 		    data: $form.formObject(),
-		    success: function($response){
+		    success: function(){
 		    	var $this = $(this),
 				data = $(this).serialize(),
 				name = $this.find('#contact_name'),
@@ -665,12 +665,10 @@ $(window).load(function(){
 				message = $this.find('#textarea1'),
 				loader = $this.find('.form-loader-area'),
 				submitBtn = $this.find('button, input[type="submit"]');
-				
+
 				loader.show();
 				submitBtn.attr('disabled', 'disabled');
-
 				
-
 		    	swal("Thanks!", "Your message has been sent successfully!", "success");
 		    	$('#contactForm').trigger("reset");
 
