@@ -675,13 +675,15 @@ $(window).load(function(){
 		    },
 		    error: function(){
 		    	function(){
+		    		var $this = $(this),
+				data = $(this).serialize(),
+				name = $this.find('#contact_name'),
+				email = $this.find('#email'),
+				message = $this.find('#textarea1'),
+				loader = $this.find('.form-loader-area'),
+				submitBtn = $this.find('button, input[type="submit"]');
 				sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
-				var hand = setTimeout(function(){
-					loader.hide();
-					submitBtn.removeAttr('disabled');
-					clearTimeout(hand);
-				}, 1000);
-			}
+				}
 		    }
 		    dataType: "json"
 		});
