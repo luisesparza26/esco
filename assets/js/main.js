@@ -659,7 +659,7 @@ $(window).load(function(){
 			    data: $form.formObject(),
 			    success: function(){
 			    		alert('HOLA MUNDO');
-			    	}
+			    	},
 			    error: function(){
 					sweetAlert("Uups", "Tu mensaje no pudo ser enviado, intenta más tarde!", "error");
 			    },
